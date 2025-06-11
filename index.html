@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="view-dependent deformation fields">
+  <meta property="og:title" content="View-Dependent Deformation Fields for 2D Editing of 3D Models"/>
+  <meta property="og:description" content="View-Dependent Deformation Fields for 2D Editing of 3D Models
+   (Meshes and Gaussian Splats)"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>View-Dependent Deformation Fields for 2D Editing of 3D Models</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">View-Dependent Deformation Fields for 2D Editing of 3D Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://martin-elmqirmi.github.io/" target="_blank">Martin El Mqirmi</a>,</span>
+                <span class="author-block">
+                  <a href="https://noamaig.github.io/" target="_blank">Noam Aigerman</a></span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Université de Montréal<br><b>EXPRESSIVE 2025</b></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/2504.05544" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/Martin-elmqirmi/view_dependent_deformation_fields" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2504.05544" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              We propose a method for authoring non-realistic 3D objects (represented as either 3D Gaussian Splats or meshes), that comply
+              with 2D edits from specific viewpoints. Namely, given a 3D object, a user chooses different viewpoints and interactively deforms
+              the object in the 2D image plane of each view. The method then produces a “deformation field” - an interpolation between those
+              2D deformations in a smooth manner as the viewpoint changes. Our core observation is that the 2D deformations do not need to
+              be tied to an underlying object, nor share the same deformation space. We use this observation to devise a method for authoring
+              view-dependent deformations, holding several technical contributions: first, a novel way to compositionality-blend between the
+              2D deformations after lifting them to 3D - this enables the user to “stack” the deformations similarly to layers in an editing
+              software, each deformation operating on the results of the previous; second, a novel method to apply the 3D deformation to 3D
+              Gaussian Splats; third, an approach to author the 2D deformations, by deforming a 2D mesh encapsulating a rendered image
+              of the object. We show the versatility and efficacy of our method by adding cartoonish effects to objects, providing means to
+              modify human characters, fitting 3D models to given 2D sketches and caricatures, resolving occlusions, and recreating classic
+              non-realistic paintings as 3D models.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/interface.mp4"
+                  type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          Interface to author the View-Dependent Models
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+
+
+  <section class="hero is-small results-section">
+    <div class="carousel-header">
+      <h1 class="title has-text-centered">Results</h1>
+    </div>
+
+    <div class="carousel-container">
+
+      <h3 class="result-title">Meshes</h3>
+      <!-- Repeat this block for each row -->
+      <div class="carousel-track">
+        <div class="carousel-strip track1">
+          <!-- Original set -->
+          <video src="static/videos/house_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/charlie_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/einstein_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/bunny_final.mp4" autoplay muted playsinline loop></video>
+          <!-- Duplicate set for seamless loop -->
+          <video src="static/videos/house_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/charlie_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/einstein_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/bunny_final.mp4" autoplay muted playsinline loop></video>
+        </div>
+      </div>
+      <div class="carousel-track">
+        <div class="carousel-strip track2">
+          <!-- Original set -->
+          <video src="static/videos/dress_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/rodin_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/viking_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/cezanne_final.mp4" autoplay muted playsinline loop></video>
+          <!-- Duplicate set for seamless loop -->
+          <video src="static/videos/dress_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/rodin_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/viking_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/cezanne_final.mp4" autoplay muted playsinline loop></video>
+        </div>
+      </div>
+
+      <h3 class="result-title">Gaussian Splats</h3>
+      <div class="carousel-track">
+        <div class="carousel-strip track3">
+          <video src="static/videos/crocodile_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/plane_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/tractor_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/castle_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/anime_girl_final.mp4" autoplay muted playsinline loop></video>
+          <-- Repeat -->
+          <video src="static/videos/crocodile_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/plane_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/tractor_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/castle_final.mp4" autoplay muted playsinline loop></video>
+          <video src="static/videos/anime_girl_final.mp4" autoplay muted playsinline loop></video>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Youtube video -->
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <!-- Paper video. -->
+      <h2 class="title is-3">Video Presentation</h2>
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h1>Coming Soon</h1>
+<!--          <div class="publication-video">-->
+<!--            &lt;!&ndash; Youtube embed code here &ndash;&gt;-->
+<!--            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--          </div>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End youtube video -->
+
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{mqirmi2025viewdependentdeformationfields2d,
+      title={View-Dependent Deformation Fields for 2D Editing of 3D Models},
+      author={Martin El Mqirmi and Noam Aigerman},
+      year={2025},
+      eprint={2504.05544},
+      archivePrefix={arXiv},
+      primaryClass={cs.GR},
+      url={https://arxiv.org/abs/2504.05544},
+}</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
