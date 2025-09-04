@@ -1,0 +1,55 @@
+[
+  {
+    "file": "bunny_final.mp4",
+    "type": "Adding dynamism",
+    "description": "We adjusted the bunny’s ear direction to create a more dynamic look.",
+    "figure": "16"
+  },
+  {
+    "file": "cezanne_final.mp4",
+    "type": "Still life in the style of Cézanne",
+    "description": "We recreated Cézanne's still life style in 3D by incorporating multiple perspectives into key views.",
+    "figure": "6",
+    "pdfImage": "figures/still_life.png"
+  },
+  {
+    "file": "charlie_final.mp4",
+    "type": "Positioning of facial features",
+    "description": "We adjusted the position and shape of facial features—ears, head, mouth, eyes, and nose—for specific views.",
+    "figure": "4",
+    "pdfImage": "figures/generated_cartoon_head.png"
+  },
+  {
+    "file": "dress_final.mp4",
+    "type": "Editing cloth",
+    "description": "To improve realism, we added folds to the dress without strictly following physical plausibility.",
+    "figure": "11"
+  },
+  {
+    "file": "einstein_final.mp4",
+    "type": "Use within generative process",
+    "description": "A 2D caricature of Einstein was used to generate a 3D model. We then manually adjusted facial features to better match the original drawing, without introducing artifacts in other views.",
+    "figure": "8",
+    "pdfImage": "figures/caricature.png"
+  },
+  {
+    "file": "house_final.mp4",
+    "type": "Forced perspective effect",
+    "description": "As the camera lowers, a trapezoidal shape helps the house appear towering over a kid.",
+    "figure": "7"
+  },
+  {
+    "file": "rodin_final.mp4",
+    "type": "Fitting to sketch",
+    "description": "We corrected the model to better align with a side-view 2D sketch.",
+    "figure": "1",
+    "pdfImage": "figures/rodin.png"
+  },
+  {
+    "file": "viking_final.mp4",
+    "type": "Small touch-ups",
+    "description": "We edit the viking model’s profile—refining the nose, enlarging the mustache, softening the hair, and angling the horn—while keeping the front view unchanged.",
+    "figure": "9",
+    "pdfImage": "figures/viking.png"
+  }
+]

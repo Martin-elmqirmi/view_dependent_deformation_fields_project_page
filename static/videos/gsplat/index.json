@@ -1,0 +1,34 @@
+[
+  {
+    "file": "anime_girl_final.mp4",
+    "type": "Small touch-ups",
+    "description": "Enhancing the anime girl's appearance with subtle side details.",
+    "figure": "14",
+    "pdfImage": "figures/anime_girl.png"
+  },
+  {
+    "file": "castle_final.mp4",
+    "type": "Avoiding occlusions",
+    "description": "The left rook of the castle, previously hidden, is now visible from the front-side.",
+    "figure": "10",
+    "pdfImage": "figures/castle.png"
+  },
+  {
+    "file": "crocodile_final.mp4",
+    "type": "Artistic exaggeration",
+    "description": "The crocodile’s upper jaw may seem small, so we exaggerated it from the front to enhance its threat.",
+    "figure": "12"
+  },
+  {
+    "file": "plane_final.mp4",
+    "type": "Artistic exaggeration",
+    "description": "The plane looked too rigid, so we gave it a more dynamic, \"mid-flight\" appearance.",
+    "figure": "12"
+  },
+  {
+    "file": "tractor_final.mp4",
+    "type": "Artistic exaggeration",
+    "description": "We made the bulldozer larger to enhance its sense of strength and authority.",
+    "figure": "12"
+  }
+]
